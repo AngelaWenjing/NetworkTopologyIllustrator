@@ -54,4 +54,4 @@ maintained.
 
 [store]: https://chrome.google.com/webstore/category/extensions
 [nti]: https://chrome.google.com/webstore/detail/network-topology-illustra/cjkdplfcgohjlmbefbgpelkmjincljbj
-[nti_py]: https://github.com/AngelaWenjing/NetworkTopologyIllustrator/AlreadyDeprecated
+[nti_py]: https://github.com/AngelaWenjing/NetworkTopologyIllustrator/tree/master/AlreadyDeprecated
