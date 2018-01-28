@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Network Topology Illustrator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="libs/bootstrap.min.css"></link>
+  <script src="libs/jquery-3.3.1.min.js"></script>
+  <script src="libs/popper.min.js"></script>
+  <script src="libs/bootstrap.min.js"></script>
+</head>
+<body class="container">
+  <div class="wrapper">
+
+    <h4>Network Topology Illustrator</h4>
+    <hr>
+
+    <div class="row">
+      <div class="col">                   <!-- left half: source and options -->
+        <div class="row">
+          <div class="form-group col">      <!-- Souce panel -->
+            <label for="text">Source:
+              <img id="info" src="icons/info.png" data-toggle="popover"
+                   data-trigger="hover" data-placement="top" data-content="" />
+            </label>
+            <textarea id="text" class="form-control" rows="10" cols="30" value=""></textarea>
+          </div>
+
+          <div class="form-group col-*-2">      <!-- Option panel -->
+            <label>Options:</label>
+
+            <div class="form-inline">
+              <label for="text-size">Text size:</label>
+              <input id="text-size" type="number" class="form-control" value="0" min="0" max="99" />
+            </div>
+
+            <div class="form-inline">
+                <label for="node-color">Node color:</label>
+                <input id="node-color" type="color" class="form-color-input" value="#FFFFFF" />
+            </div>
+            <div class="form-inline">
+              <label for="node-size">Node size:</label>
+              <input id="node-size" type="number" class="form-control" value="5" min="1" max="99" />
+            </div>
+
+            <div class="form-inline">
+                <label for="edge-color">Edge color:</label>
+                <input id="edge-color" type="color" class="form-color-input" value="#000000" />
+            </div>
+
+            <div class="form-inline">
+              <label for="edge-size">Edge width:</label>
+              <input id="edge-size" type="number" class="form-control" value="2" min="1" max="99" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-inline d-flex justify-content-end">
+          <input id="clear" class="btn btn-secondary" type="button" value="Clear" />
+          <input id="save" type="submit" class="btn btn-primary ml-auto" value="Save" 
+                 data-toggle="modal" data-target="#message" />
+        </div>
+
+      </div>
+
+      <div class="col">                   <!-- right half: data table -->
+        <label>Topology:</label>
+        <div class="table-wrapper">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Node</th> <th>X</th> <th>Y</th>
+                <th>Edge</th> <th>O</th> <th>D</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="modal fade" id="message">   <!-- Modal dialog: show save status -->
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Network Topology Illustrator</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" id="response" />
+      </div>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="index.css"></link>
+  <script src="javascript/save.svg.js"></script>
+  <script src="javascript/update.table.js"></script>
+  <script src="javascript/index.js"></script>
+</body>
+</html>

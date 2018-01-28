@@ -1,0 +1,41 @@
+body {
+    background:     #eee;
+    padding:        1em;
+}
+textarea, td {
+    padding:        0.25em 0.5em !important;
+    font-family:    monospace;
+    white-space:    nowrap;
+}
+.wrapper {
+    border-radius:  0.25em;
+    margin:         0.25em;
+    padding:        1em;
+    box-shadow:     0.1em 0.1em 0.1em 0.1em #666;
+}
+.col {
+    background:   #fff;
+    margin:         0.5em;
+    padding:        1em;
+}
+.col-\*-2 {
+    margin:         0.5em 0em;
+    padding:        1em 0em;
+}
+.table-wrapper {
+    height:         15em ;
+    overflow-y:     auto;
+}
+img {
+    height: 1em;
+}
+.popover {
+    max-width:      100%;
+    font-family:    monospace;
+}
+.form-inline {
+    padding:        0.25em;
+}
+.form-control {
+    padding:        0.25em;
+}
